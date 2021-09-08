@@ -1,7 +1,6 @@
-using Lesson2.App2;
 using NUnit.Framework;
-
-namespace Lesson2.Tests
+using HW2_2;
+namespace HW2.Tests
 {
     public class BinSearchTests
     {
@@ -18,7 +17,7 @@ namespace Lesson2.Tests
             int searchValue = 4;
             int expected = 4;
 
-            var actual = BinSearch.BinarySearch(arr, searchValue);
+            var actual = BinarySearch.Search(arr, searchValue);
 
             Assert.AreEqual(expected, actual);
         }
@@ -29,7 +28,7 @@ namespace Lesson2.Tests
             int searchValue = 11;
             int expected = 11;
 
-            var actual = BinSearch.BinarySearch(arr, searchValue);
+            var actual = BinarySearch.Search(arr, searchValue);
 
             Assert.AreEqual(expected, actual);
         }
@@ -40,7 +39,7 @@ namespace Lesson2.Tests
             int searchValue = 19;
             int expected = 19;
 
-            var actual = BinSearch.BinarySearch(arr, searchValue);
+            var actual = BinarySearch.Search(arr, searchValue);
 
             Assert.AreEqual(expected, actual);
         }
@@ -51,7 +50,7 @@ namespace Lesson2.Tests
             int searchValue = 25;
             int expected = -1;
 
-            var actual = BinSearch.BinarySearch(arr, searchValue);
+            var actual = BinarySearch.Search(arr, searchValue);
 
             Assert.AreEqual(expected, actual);
         }

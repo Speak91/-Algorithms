@@ -8,7 +8,8 @@ namespace HW2_2
         static void Main(string[] args)
         {
             int[] arr = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
-            int a = BinarySearch(arr, 2);
+            
+            var a = BinarySearch.Search(arr, 2);
             Console.WriteLine(a);
         }
         

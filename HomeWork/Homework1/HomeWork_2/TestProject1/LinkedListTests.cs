@@ -1,16 +1,16 @@
-﻿using Lesson2.App1;
+﻿using Hw2_1;
 using NUnit.Framework;
 
-namespace Lesson2.Tests
+namespace HW2.Tests
 {
-    class TwoLinkedListTests
+    class LinkedListTests
     {
-        TwoLinkedList list;
+        LinkedList list;
 
         [SetUp]
         public void Setup()
         {
-            list = new TwoLinkedList();
+            list = new LinkedList();
             list.AddNode(1);
             list.AddNode(2);
             list.AddNode(3);
