@@ -90,6 +90,12 @@ namespace HW4_2
             }
             return false;
         }
+
+        /// <summary>
+        /// Метод удаления
+        /// </summary>
+        /// <param name="data">Значение</param>
+        /// <returns>Возвращает true в случае нахождения и удаления и false в ином случае </returns>
         public bool Delete(int data)
         {
             TreeNode current = Root;
@@ -136,10 +142,9 @@ namespace HW4_2
         static void Main(string[] args)
         {
             int[] array = new int [7] {3,5,2,4,7,1,6};
-            Random random = new Random();
             Array.Sort(array);
             BinaryTree tree = new BinaryTree(array[array.Length / 2]);
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length; i++) //Заполнение дерева
             {
                 if (array.Length / 2 == i)
                 {
@@ -147,8 +152,8 @@ namespace HW4_2
                 }
                 tree.AddNode(array[i]);
             }
-            bool a = tree.SearchData(6);
-            tree.Delete(7);
+            bool a = tree.SearchData(6); //Поиск элемента
+            tree.Delete(7); //Удаление элемента
         }
     }
 }
