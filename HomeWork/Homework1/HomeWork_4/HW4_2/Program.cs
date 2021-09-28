@@ -14,7 +14,7 @@ namespace HW4_2
     }
     public class BinaryTree
     {
-        protected TreeNode Root;
+        public TreeNode Root;
 
         public BinaryTree(int data)
         {
